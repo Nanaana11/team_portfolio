@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="14.css">
+    <title>Tridev</title>
+</head>
+<body>
+    <!---- header ----->
+    <!---- nav ----->
+    <section class="header" id="home">
+        <nav>
+            <h1 class="logo"><a href="">TD</a></h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Teams</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="head-center">
+            <h1>We are TriDev</h1>
+            <p>Kami adalah satu tim yang sedang mempelajari web developher dan basis data. Seorang newbie dalam dunia coding dengan moto keep learning and pratice to death!</p>
+            <button class="btn1"><a href="#team">Learn More</a></button>
+            <button class="btn2"><a href="#contact">Hire us</a></button>
+        </div>
+    </section>
+    <!----- teams ------>
+    <section class="teams" id="team">
+        <div class="title-top">
+            <h3>Our Member</h3>
+        </div>
+        <div class="row">
+            <div class="team-con">
+                <div class="team-card">
+                    <div class="team-img">
+                        <a href="https://www.instagram.com/"><img src="image/Triana.jpeg" alt="Triana"><a>
+                    </div>
+                    <div class="team-name">
+                        <h4>Triana Putri</h4>
+                        <p>Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-con">
+                <div class="team-card">
+                    <div class="team-img">
+                        <a href="https://www.instagram.com/sheene.xx/"><img src="image/Tristan.jpeg" alt="Tristan"></a>
+                    </div>
+                    <div class="team-name">
+                        <h4>Tristan Putra</h4>
+                        <p>Staff</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-con">
+                <div class="team-card">
+                    <div class="team-img">
+                        <a href="https://www.instagram.com/sythepar/"><img src="image/Deva.jpeg" alt="Deva"></a>
+                    </div>
+                    <div class="team-name">
+                        <h4>Deva Gundhala</h4>
+                        <p>Staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------ message ------>
+    <section class="contacts" id="contact">
+        <div class="title-con">
+            <h2>Call Us</h2>
+        </div>
+        <form action="">
+            <div class="contact-box">
+                <input type="text" name="name" required="">
+                <label for="">Name</label>
+            </div>
+            <div class="contact-box">
+                <input type="email" name="email" required="">
+                <label for="">Email</label>
+            </div>
+            <div class="contact-box">
+                <input type="text" name="phone" required="">
+                <label for="">Phone</label>
+            </div>
+            <div class="contact-box">
+                <textarea name="message" id="" cols="30" rows="4" placeholder="Message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <a>Copyright © 2022 TriDev all Rights Reversed.</a>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
